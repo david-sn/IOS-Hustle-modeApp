@@ -12,6 +12,7 @@
 		FD086ACE22575DDB00696119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD086ACC22575DDB00696119 /* Main.storyboard */; };
 		FD086AD022575DDB00696119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD086ACF22575DDB00696119 /* Assets.xcassets */; };
 		FD086AD322575DDB00696119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD086AD122575DDB00696119 /* LaunchScreen.storyboard */; };
+		FD086ADB2257644A00696119 /* hustle-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = FD086ADA2257644A00696119 /* hustle-on.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FD086ACF22575DDB00696119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD086AD222575DDB00696119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD086AD422575DDB00696119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD086ADA2257644A00696119 /* hustle-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "hustle-on.wav"; path = "../../hustle-mode-code-assets/assets/Assets/hustle-on.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		FD086AC722575DDB00696119 /* HustleApp */ = {
 			isa = PBXGroup;
 			children = (
+				FD086ADA2257644A00696119 /* hustle-on.wav */,
 				FD086AC822575DDB00696119 /* AppDelegate.swift */,
 				FD086ACA22575DDB00696119 /* ViewController.swift */,
 				FD086ACC22575DDB00696119 /* Main.storyboard */,
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD086ADB2257644A00696119 /* hustle-on.wav in Resources */,
 				FD086AD322575DDB00696119 /* LaunchScreen.storyboard in Resources */,
 				FD086AD022575DDB00696119 /* Assets.xcassets in Resources */,
 				FD086ACE22575DDB00696119 /* Main.storyboard in Resources */,
