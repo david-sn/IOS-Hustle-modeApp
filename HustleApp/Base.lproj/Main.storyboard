@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,89 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HustleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="YB8-LU-1Ke">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaI-Z4-zpL">
+                                <rect key="frame" x="157" y="303" width="60" height="60"/>
+                                <state key="normal" image="powerButton"/>
+                                <connections>
+                                    <action selector="powerBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LGZ-eO-Vtc"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vsr-Hb-ZEZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocketAndStream" translatesAutoresizingMaskIntoConstraints="NO" id="y3b-nE-2ka">
+                                        <rect key="frame" x="0.0" y="447" width="375" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="ULZ-hH-kZU">
+                                        <rect key="frame" x="0.0" y="190" width="375" height="477"/>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hustle Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugU-pt-dSJ">
+                                        <rect key="frame" x="114" y="416" width="147" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uck-Ke-cYp">
+                                        <rect key="frame" x="114" y="488" width="155" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29411764705882354" green="0.46666666666666667" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ULZ-hH-kZU" firstAttribute="leading" secondItem="Vsr-Hb-ZEZ" secondAttribute="leading" id="OwO-6z-JKX"/>
+                                    <constraint firstAttribute="trailing" secondItem="ULZ-hH-kZU" secondAttribute="trailing" id="Y04-Cf-M3X"/>
+                                    <constraint firstAttribute="bottom" secondItem="ULZ-hH-kZU" secondAttribute="bottom" id="xRQ-um-NVk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vsr-Hb-ZEZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2MV-3W-2C3"/>
+                            <constraint firstItem="Vsr-Hb-ZEZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4U0-0g-o2N"/>
+                            <constraint firstItem="YB8-LU-1Ke" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DH8-rX-cX2"/>
+                            <constraint firstItem="YB8-LU-1Ke" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Izp-ba-nSv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JaI-Z4-zpL" secondAttribute="bottom" constant="304" id="KtW-vt-2AJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JaI-Z4-zpL" secondAttribute="trailing" constant="158" id="O4k-cc-MrT"/>
+                            <constraint firstItem="YB8-LU-1Ke" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="O7Z-8w-Qzk"/>
+                            <constraint firstItem="Vsr-Hb-ZEZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ulz-WR-iwQ"/>
+                            <constraint firstItem="Vsr-Hb-ZEZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g0W-gS-JOl"/>
+                            <constraint firstItem="YB8-LU-1Ke" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gzh-Be-JVl"/>
+                            <constraint firstItem="JaI-Z4-zpL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="mnq-Ht-gB6"/>
+                            <constraint firstItem="JaI-Z4-zpL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="283" id="p3Q-Qh-552"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cloudHolder" destination="Vsr-Hb-ZEZ" id="3zp-lx-TgS"/>
+                        <outlet property="darkBluBG" destination="YB8-LU-1Ke" id="oAG-H5-h6t"/>
+                        <outlet property="hustleLbl" destination="ugU-pt-dSJ" id="XKC-M1-s5x"/>
+                        <outlet property="onLbl" destination="Uck-Ke-cYp" id="aIG-VQ-rNe"/>
+                        <outlet property="powerBtn" destination="JaI-Z4-zpL" id="oCh-aF-1TW"/>
+                        <outlet property="rocket" destination="y3b-nE-2ka" id="oep-79-4G6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cloudsAndOrangeOval" width="414" height="477"/>
+        <image name="darkBlueBG" width="414" height="736"/>
+        <image name="powerButton" width="96" height="96"/>
+        <image name="rocketAndStream" width="414" height="672"/>
+    </resources>
 </document>
